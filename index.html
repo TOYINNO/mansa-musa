@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mansa Musa ($MANSA)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- <a href="#home" class="logo">
+          <img src="mansa-high-resolution-logo.png" alt="Peer Wide Pig Logo" />
+        </a> -->
+        <h1>Mansa Musa ($MANSA)</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#whitepaper">Whitepaper</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="home">
+        <div class="carousel">
+          <div class="slides">
+            <div class="slide">
+              <img
+                src="pixlr-image-generator-b24de60d-06a6-4fd1-9fa8-f94cbfcf7906.png"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="slide">
+              <img src="mansabackground.png" alt="Slide 2" />
+            </div>
+            <div class="slide">
+              <img
+                src="pixlr-image-generator-b24de60d-06a6-4fd1-9fa8-f94cbfcf7906.png"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="slide">
+              <img src="mansaphoto.png" alt="Slide 4" />
+            </div>
+            <div class="slide">
+              <img
+                src="pixlr-image-generator-e1e90161-4ba8-4ad8-a748-2cce177d46fe.png"
+                alt="Slide 5"
+              />
+            </div>
+            <div class="slide">
+              <img src="mansawithpeoplecarryinggold.png" alt="Slide 6" />
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+        </div>
+        <div class="container content-overlay">
+          <h2>Welcome to Mansa Musa ($MANSA)</h2>
+          <p>
+            Join us in bringing back the legendary wealth of Mansa Musa. $MANSA
+            is not just a meme coin; it’s a movement towards unprecedented
+            prosperity and excitement in the crypto ecosystem.
+          </p>
+        </div>
+      </section>
+
+      <section id="tokenomics" class="tokenomics">
+        <div class="container">
+          <div class="boxed-text">
+            <h2>Tokenomics</h2>
+            <p>
+              The tokenomics of $MANSA are designed to ensure fair distribution,
+              robust marketing, team incentives, and smooth exchange listing.
+              Below is the breakdown of the $MANSA token allocation:
+            </p>
+            <ul>
+              <li><strong>Total Supply:</strong> 100,000,000 $MANSA</li>
+              <li>
+                <strong>Airdrop:</strong> 95,000,000 $MANSA (95%) to Andrew Tate
+              </li>
+              <li><strong>Marketing:</strong> 2,000,000 $MANSA (2%)</li>
+              <li><strong>Team:</strong> 2,000,000 $MANSA (2%)</li>
+              <li><strong>Exchange Listing:</strong> 1,000,000 $MANSA (1%)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="whitepaper" class="whitepaper">
+        <div class="container">
+          <div class="boxed-text">
+            <h2>Whitepaper</h2>
+            <p>
+              Read our detailed whitepaper to understand the vision, mission,
+              and technical details of $MANSA. Discover how we plan to
+              revolutionize the crypto world with the legacy of Mansa Musa.
+            </p>
+            <a href="whitepaper.html" class="button">Read Whitepaper</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="roadmap">
+        <div class="container">
+          <div class="boxed-text">
+            <h2>Roadmap</h2>
+            <p class="animated-text">
+              Explore our roadmap to see the milestones we’ve achieved and the
+              exciting future developments we have planned for $MANSA. Join us
+              on our journey to bringing wealth and prosperity to our community.
+            </p>
+            <ul>
+              <li>
+                <strong>Q1 2024:</strong> Concept Development and Team Formation
+              </li>
+              <li>
+                <strong>Q2 2024:</strong> Whitepaper Release and Initial
+                Marketing
+              </li>
+              <li><strong>Q3 2024:</strong> Token Launch and Airdrop</li>
+              <li>
+                <strong>Q4 2024:</strong> Exchange Listings and Community
+                Building
+              </li>
+              <li>
+                <strong>2025:</strong> Continuous Development and Ecosystem
+                Expansion
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Mansa Musa ($MANSA). All Rights Reserved.</p>
+        <div class="social">
+          <a href="https://x.com/" target="_blank"
+            ><img src="sl_z_072523_61700_01.jpg" alt="Twitter"
+          /></a>
+          <a href="https://telegram.org" target="_blank"
+            ><img src="telegram-icon.png" alt="Telegram"
+          /></a>
+          <a href="https://discord.com" target="_blank"
+            ><img src="discord-icon.png" alt="Discord"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const slides = document.querySelector(".slides");
+      const slideCount = document.querySelectorAll(".slide").length;
+      let currentIndex = 0;
+
+      function updateCarousel() {
+        const offset = -currentIndex * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slideCount;
+        updateCarousel();
+      }
+
+      setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    </script>
+  </body>
+</html>
